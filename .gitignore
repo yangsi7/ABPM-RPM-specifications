@@ -1,5 +1,22 @@
-node_modules
-build
+node_modules/
+build/
 npm-debug.log
+*.log
 .env
+.env.local
 .DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Keep git hooks
+!.claude/hooks/

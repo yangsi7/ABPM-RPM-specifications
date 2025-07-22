@@ -699,6 +699,7 @@ $breakpoints: (
 * Never duplicate functionality; extend instead.
 * If stuck, ask—but batch questions.
 * Keep responses professional, paragraph-style unless a list is requested.
+* **NEVER use time-based planning** (weeks, days, hours) - use phases and dependencies instead.
 
 </important_reminders>
 

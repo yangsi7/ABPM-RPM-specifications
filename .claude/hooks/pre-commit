@@ -1,0 +1,47 @@
+#!/bin/bash
+# .claude/hooks/pre-commit
+# Documentation validation pre-commit hook
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# Check if doc-ref.md is updated when docs/ changes
+if git diff --cached --name-only | grep -q "^docs/"; then
+  if ! git diff --cached --name-only | grep -q "working_files/doc-ref.md"; then
+    echo -e "${RED}Error: Documentation changed but doc-ref.md not updated${NC}"
+    echo "Please update working_files/doc-ref.md with the new document version and status"
+    exit 1
+  fi
+fi
+
+# Check for scripts in root directory
+if git diff --cached --name-only | grep -E "^[^/]+\.(js|py|sh)$"; then
+  echo -e "${RED}Error: Scripts should be in scripts/ directory, not root${NC}"
+  echo "Found script files in root:"
+  git diff --cached --name-only | grep -E "^[^/]+\.(js|py|sh)$"
+  echo "Please move them to the appropriate scripts/ subdirectory"
+  exit 1
+fi
+
+# Check if planning.md reflects documentation changes
+if git diff --cached --name-only | grep -E "^docs/.*\.md$"; then
+  if ! git diff --cached --name-only | grep -q "working_files/planning.md"; then
+    echo -e "${YELLOW}Warning: Documentation changed but planning.md not updated${NC}"
+    echo "Consider updating the Documentation Lifecycle section in planning.md"
+  fi
+fi
+
+# Check if event-stream.md is updated for any significant changes
+if git diff --cached --name-only | grep -E "\.(md|drawio|pdf)$" | grep -v "event-stream.md"; then
+  if ! git diff --cached --name-only | grep -q "working_files/event-stream.md"; then
+    echo -e "${YELLOW}Warning: Significant changes made but event-stream.md not updated${NC}"
+    echo "Consider logging this change in event-stream.md"
+  fi
+fi
+
+# Success message
+echo -e "${GREEN}Pre-commit checks passed!${NC}"
+exit 0

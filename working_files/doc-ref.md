@@ -26,21 +26,34 @@
 - **MVCP Patient Summary**: `docs/screenshots/new-mvcp-patient-summary.png`
 - **MVCP Main**: `docs/screenshots/new-mvcp.png`
 
+## Document Status Matrix
+
+| Document | Version | Status | Last Updated | Next Review | Location |
+|----------|---------|--------|--------------|-------------|----------|
+| MVCP Current State | 1.0 | Approved | 2025-01-20 | 2025-02-20 | `docs/01-current-state/mvcp/` |
+| SCLA Current State | 1.0 | Approved | 2025-01-20 | 2025-02-20 | `docs/01-current-state/scla/` |
+| Research Synthesis | 1.0 | Complete | 2025-01-21 | N/A | `docs/03-architecture/RESEARCH_SYNTHESIS.md` |
+| Navigation Requirements | 2.0 | Approved | 2025-01-22 | 2025-02-22 | `docs/02-requirements/navigation-requirements-v2.md` |
+| Navigation Design | 2.0 | Approved | 2025-01-22 | 2025-02-22 | `docs/03-architecture/navigation-design-evaluation.md` |
+| Technical Guide | 1.0 | Draft | 2025-01-22 | 2025-01-25 | `docs/03-architecture/TECHNICAL_IMPLEMENTATION_GUIDE.md` |
+| ASCII Mockups | 3.0 | Approved | 2025-01-22 | 2025-02-22 | `docs/03-architecture/ascii-mockups-updated-navigation.md` |
+
 ## Architecture Documents
 
 ### Phase 1 Deliverables (Complete)
-- **Research Synthesis**: `docs/architecture/RESEARCH_SYNTHESIS.md`
+- **Research Synthesis**: `docs/03-architecture/RESEARCH_SYNTHESIS.md` (v1.0)
 
 ### Phase 2 Deliverables (Complete)
-- **Entity Relationships**: `docs/architecture/ENTITY_RELATIONSHIP_GRAPH.drawio`
-- **Solution Analysis**: `docs/architecture/SOLUTION_OPTIONS_ANALYSIS.md`
-- **Expert Review**: `docs/architecture/expert-review-reflection.md`
+- **Entity Relationships**: `docs/03-architecture/ENTITY_RELATIONSHIP_GRAPH.drawio` (v1.0)
+- **Solution Analysis**: `docs/03-architecture/SOLUTION_OPTIONS_ANALYSIS.md` (v1.0)
+- **Expert Review**: `docs/03-architecture/expert-review-reflection.md` (v1.0)
 
 ### Navigation Redesign (Complete)
-- **Requirements**: `docs/requirements/navigation-requirements-v2.md`
-- **Design Evaluation**: `docs/architecture/navigation-design-evaluation.md`
-- **Updated Mockups**: `docs/design/ascii-mockups-updated-navigation.md`
-- **Technical Guide**: `docs/architecture/TECHNICAL_IMPLEMENTATION_GUIDE.md`
+- **Requirements**: `docs/02-requirements/navigation-requirements-v2.md` (v2.0)
+- **Design Evaluation**: `docs/03-architecture/navigation-design-evaluation.md` (v2.0)
+- **Updated Mockups**: `docs/03-architecture/ascii-mockups-updated-navigation.md` (v3.0)
+- **Technical Guide**: `docs/03-architecture/TECHNICAL_IMPLEMENTATION_GUIDE.md` (v1.0)
+- **Documentation Plan**: `docs/03-architecture/documentation-improvement-plan.md` (v1.0)
 
 ### Phase 3 Deliverables (Pending)
 - **API Contract Specs**: Partially complete in Technical Guide
@@ -50,9 +63,10 @@
 ### Phase 4 Deliverables (Pending)
 - **Executive Summary**: `EXECUTIVE_SUMMARY.md` (pending)
 
-## Research Notes
-- Puppeteer analysis results: `mvcp-navigation-analysis.json`
-- Current state screenshots: `screenshots/`
+## Tools and Analysis
+- **Puppeteer Scripts**: `scripts/analysis/analyze-mvcp-*.js`
+- **Analysis Results**: `scripts/analysis/mvcp-navigation-analysis.json`
+- **Screenshots**: `scripts/analysis/screenshots/`
 
 ## Archive
-- `docs/archive/2025-07-22/` - Original mockups with virtual consultation (superseded)
+- `docs/archive/2025-07-22/` - Original mockups with virtual consultation (superseded v1.0, v2.0)
