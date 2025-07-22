@@ -582,32 +582,73 @@ class StudyRealtimeSync {
 }
 ```
 
-## Migration Strategy
+## Implementation Phases
 
-### Phase 1: Navigation Update (Week 1)
-1. Update top navigation labels
-2. Add redirects for backward compatibility
-3. Update internal links
+### Phase A: Foundation Setup
+**Dependencies**: None  
+**Deliverables**: Navigation structure updates
 
-### Phase 2: Studies Unification (Week 2)
-1. Create unified studies list component
-2. Add study type filtering
-3. Update study creation flow
+1. Update top navigation labels ("Holter Studies" → "Studies")
+2. Add URL redirects for backward compatibility
+3. Update all internal navigation references
+4. Verify no broken links
 
-### Phase 3: Patient Tab Restructure (Week 3)
-1. Implement new tab structure
-2. Create Blood Pressure tab
-3. Update Summary tab with study links
+**Completion Criteria**: All navigation labels updated, redirects working
 
-### Phase 4: ABPM Integration (Week 4-5)
-1. Implement Sphygmo iframe integration
-2. Set up PostMessage communication
-3. Add real-time updates
+### Phase B: Studies Management Layer
+**Dependencies**: Phase A complete  
+**Deliverables**: Unified study management
 
-### Phase 5: Testing & Polish (Week 6)
-1. End-to-end testing
-2. Performance optimization
-3. User acceptance testing
+1. Create unified studies list component with filtering
+2. Implement study type indicators (icons, badges)
+3. Add study creation modal with device selection
+4. Create study adapter interface pattern
+
+**Completion Criteria**: Can create and list both Holter and ABPM studies
+
+### Phase C: Patient Experience Enhancement
+**Dependencies**: Phase B complete  
+**Deliverables**: New patient detail tabs
+
+1. Implement new tab structure (Summary, Studies, ECG, Blood Pressure, Reports)
+2. Create Blood Pressure tab component
+3. Update Summary tab with active study cards
+4. Implement tab visibility logic based on active studies
+
+**Completion Criteria**: Patient tabs reflect active study types
+
+### Phase D: ABPM Integration
+**Dependencies**: Phase C complete  
+**Deliverables**: Sphygmo integration
+
+1. Implement Sphygmo iframe wrapper component
+2. Set up PostMessage communication protocol
+3. Create authentication token exchange
+4. Implement error boundaries and fallbacks
+
+**Completion Criteria**: Sphygmo data visible in Blood Pressure tab
+
+### Phase E: Real-time Synchronization
+**Dependencies**: Phase D complete  
+**Deliverables**: Live data updates
+
+1. Implement WebSocket connection for active studies
+2. Create real-time update handlers
+3. Add optimistic UI updates
+4. Implement sync status indicators
+
+**Completion Criteria**: Real-time updates working for active studies
+
+### Phase F: Quality Assurance
+**Dependencies**: Phase E complete  
+**Deliverables**: Production-ready system
+
+1. Comprehensive end-to-end testing
+2. Performance optimization (lazy loading, caching)
+3. Accessibility audit and fixes
+4. Security review (CSP, iframe policies)
+
+**Completion Criteria**: All tests passing, performance targets met
 
 ## Performance Considerations
 

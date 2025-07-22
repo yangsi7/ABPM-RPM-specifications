@@ -129,16 +129,59 @@ The rest of this document is organised as follows »
 --------------------------------------------------------------------------------
 ## 8  File-naming & archival conventions
 
-### Deliverable Naming
-- Phase 1-3 deliverables: `[DELIVERABLE_NAME].[ext]` in project root
-- Supporting docs: `docs/architecture/[category]/[name].md`
-- Diagrams: `docs/diagrams/[name].drawio` or `.pdf`
-- Research notes: `docs/research/[topic]/[date]-[name].md`
+### Documentation Standards
 
-### Archival Rules
-- Superseded designs → `docs/archive/YYYY-MM-DD/`
-- Include README explaining why archived
-- Update `doc-ref.md` with new locations
+#### Repository Structure
+```
+ABPM-RPM/
+├── scripts/               # All executable code
+│   ├── analysis/         # Analysis tools
+│   ├── tests/           # Test scripts
+│   └── checks/          # Validation scripts
+├── docs/
+│   ├── 01-current-state/  # As-is documentation
+│   ├── 02-requirements/   # Requirements and gaps
+│   ├── 03-architecture/   # Solution design
+│   ├── 04-implementation/ # Build guides
+│   ├── 05-validation/     # Test results
+│   └── archive/          # Historical versions
+├── deliverables/         # Formal phase outputs
+└── working_files/        # Active tracking
+```
+
+#### File Lifecycle
+1. **Draft**: `docs/[phase]/draft/[name]-draft-v[N].md`
+2. **Review**: Move to main folder when ready for review
+3. **Approved**: Update version and status in doc-ref.md
+4. **Archived**: `docs/archive/YYYY-MM-DD/[name]-v[N].md`
+
+#### Version Control
+- Major versions: Architectural changes (v1.0 → v2.0)
+- Minor versions: Feature additions (v1.0 → v1.1)
+- Patches: Corrections (v1.0 → v1.0.1)
+
+#### Current vs Target Tracking
+- Current state: `docs/01-current-state/`
+- Target state: `docs/03-architecture/specifications/`
+- Gap analysis: `docs/02-requirements/gap-analysis/`
+
+#### Test Script Management
+- Active scripts: `scripts/[category]/`
+- Test results: `docs/05-validation/results/`
+- Archived scripts: `scripts/archive/YYYY-MM-DD/`
+
+#### Documentation Review Cycle
+1. Draft created → todo.md entry
+2. Review requested → planning.md status update
+3. Feedback incorporated → event-stream.md logged
+4. Approved → doc-ref.md updated with version
+5. Superseded → Archive with README
+
+#### Working File Requirements
+- `todo.md`: Must include Documentation Tasks section
+- `planning.md`: Must include Documentation Lifecycle section
+- `doc-ref.md`: Must include Document Status Matrix
+- All updates must be reflected across working files
 
 --------------------------------------------------------------------------------
 ## 9  Reference glossary
