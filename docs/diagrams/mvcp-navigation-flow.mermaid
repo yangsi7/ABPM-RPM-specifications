@@ -1,0 +1,75 @@
+```mermaid
+flowchart TB
+    %% Main Entry
+    Login["Clinician Login"]:::nav --> TopNav["Top Navigation Bar"]:::nav
+    
+    %% Top Navigation Tabs
+    TopNav --> Patients["Patients Tab"]:::topnav
+    TopNav --> HolterStudies["Holter Studies Tab"]:::topnav
+    
+    %% Patients Tab Flow
+    Patients --> PatientList["Patient List View"]:::patient
+    PatientList --> CreateSCLA["Create SCLA Account"]:::patient
+    CreateSCLA --> ConsentModal["Consent Modal"]:::modal --> CreateSCLA
+    
+    PatientList --> PatientRow["Select Patient"]:::patient
+    PatientRow --> PatientDetail["Patient Detail View"]:::patient
+    
+    %% Patient Detail Sub-navigation
+    PatientDetail --> Summary["Summary"]:::subnav
+    PatientDetail --> StudiesTab["Holter Studies"]:::subnav
+    PatientDetail --> ECGTab["ECG"]:::subnav
+    PatientDetail --> VirtualConsult["Virtual Consultation"]:::subnav
+    
+    %% Summary Tab (Patient Profile)
+    Summary --> ProfileView["Patient Profile"]:::profile
+    ProfileView --> SCLACode["SCLA Login Code"]:::action
+    ProfileView --> EditProfile["Edit Profile"]:::action
+    
+    %% Studies Tab (from Patient)
+    StudiesTab --> StudyList["Study List"]:::study
+    StudyList --> SetupStudy["Set up Holter study"]:::study
+    SetupStudy --> StudyModal["Study Setup Modal"]:::modal
+    StudyModal --> StudyTypeSelect["Select Study Type<br/>(Holter/ABPM)"]:::modal
+    StudyModal --> StudyList
+    
+    StudyList --> StudyProgress["Study Progress"]:::study
+    StudyProgress --> ProgressModal["Progress Calendar"]:::modal --> StudyList
+    
+    %% ECG Tab
+    ECGTab --> ECGViewer["ECG Viewer"]:::ecg
+    ECGViewer --> SymptomLogs["Symptom Logs"]:::ecg
+    ECGViewer --> ECGTags["ECG Tags"]:::ecg
+    SymptomLogs --> Annotations["Add Annotations"]:::ecg
+    Annotations --> AnnotationModal["Annotation Modal"]:::modal --> ECGViewer
+    
+    %% Virtual Consultation Tab
+    VirtualConsult --> RPMDashboard["RPM Dashboard"]:::rpm
+    RPMDashboard --> HeartRate["Heart Rate Metrics"]:::rpm
+    RPMDashboard --> BloodPressure["Blood Pressure"]:::rpm
+    RPMDashboard --> Weight["Weight Tracking"]:::rpm
+    
+    %% Holter Studies Main Tab
+    HolterStudies --> AllStudies["All Studies List"]:::study
+    AllStudies --> StudyFilters["Status Filters"]:::filter
+    AllStudies --> StudyDetails["Study Details"]:::study
+    
+    %% ABPM Integration (Future State)
+    StudyTypeSelect -.->|Future| ABPMSetup["ABPM Study Setup"]:::future
+    ABPMSetup -.-> SphygmoIframe["Sphygmo Iframe<br/>Visualization"]:::future
+    
+    %% Class definitions
+    classDef nav fill:#1E3A5F,stroke:#0F1E2F,stroke-width:3px,color:#FFFFFF;
+    classDef topnav fill:#2E5A8E,stroke:#1E3A5F,stroke-width:2px,color:#FFFFFF;
+    classDef subnav fill:#4A7FBF,stroke:#2E5A8E,stroke-width:2px,color:#FFFFFF;
+    classDef patient fill:#E8F4FD,stroke:#2E5A8E,stroke-width:2px,color:#1E3A5F;
+    classDef study fill:#F0F7FF,stroke:#4A7FBF,stroke-width:2px,color:#1E3A5F;
+    classDef ecg fill:#FFF4E6,stroke:#FF8C00,stroke-width:2px,color:#663300;
+    classDef rpm fill:#E6F7FF,stroke:#00796B,stroke-width:2px,color:#004D40;
+    classDef profile fill:#F5F5F5,stroke:#666666,stroke-width:2px,color:#333333;
+    classDef modal fill:#FFE6E6,stroke:#CC0000,stroke-width:2px,color:#660000;
+    classDef action fill:#E6FFE6,stroke:#009900,stroke-width:2px,color:#003300;
+    classDef filter fill:#FFFFCC,stroke:#CCCC00,stroke-width:2px,color:#666600;
+    classDef future fill:#F0E6FF,stroke:#9933FF,stroke-width:2px,dash,color:#4D0099;
+    classDef logout fill:#EEEEEE,stroke:#888888,stroke-width:2px,color:#454545;
+```

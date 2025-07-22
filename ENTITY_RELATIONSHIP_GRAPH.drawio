@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-01-01T00:00:00.000Z" agent="Claude" etag="abpm-integration-v1" version="24.0.0" type="device">
+  <diagram name="ABPM Integration Entity Relationships" id="abpm-entities">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="ABPM Integration - System Entity Relationships" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- MVCP System Box -->
+        <mxCell id="mvcp-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=3;dashed=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="700" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="mvcp-label" value="MVCP SYSTEM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1976D2" vertex="1" parent="1">
+          <mxGeometry x="90" y="110" width="150" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- SCLA App Box -->
+        <mxCell id="scla-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#388E3C;strokeWidth=3;dashed=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="750" width="700" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="scla-label" value="SCLA MOBILE APP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#388E3C" vertex="1" parent="1">
+          <mxGeometry x="90" y="760" width="180" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Sphygmo System Box -->
+        <mxCell id="sphygmo-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;strokeWidth=3;dashed=1" vertex="1" parent="1">
+          <mxGeometry x="900" y="100" width="600" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="sphygmo-label" value="SPHYGMO SYSTEM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#F57C00" vertex="1" parent="1">
+          <mxGeometry x="910" y="110" width="180" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- MVCP Entities -->
+        <mxCell id="mvcp-user" value="Clinician User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mvcp-org" value="Organization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mvcp-patient" value="Patient (Master)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#90CAF9;strokeColor=#1976D2;strokeWidth=3;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mvcp-study" value="Study" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="380" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mvcp-holter-study" value="Holter Study" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="280" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mvcp-abpm-study" value="ABPM Study" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE082;strokeColor=#F57C00;strokeWidth=2;dashed=1" vertex="1" parent="1">
+          <mxGeometry x="480" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mvcp-ecg-data" value="ECG Data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="180" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mvcp-symptom" value="Symptom Log" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="340" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mvcp-identity" value="Identity Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#64B5F6;strokeColor=#1976D2;strokeWidth=3;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="540" y="280" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mvcp-api-gateway" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="620" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- SCLA Entities -->
+        <mxCell id="scla-user" value="Patient User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="120" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scla-device" value="Device Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="280" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scla-holter" value="Holter Device" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="180" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scla-abpm" value="ABPM Device" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE082;strokeColor=#F57C00;strokeWidth=2;dashed=1" vertex="1" parent="1">
+          <mxGeometry x="340" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scla-sync" value="Data Sync Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="500" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scla-storage" value="Local Storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="500" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Sphygmo Entities -->
+        <mxCell id="sphygmo-patient" value="Patient (Shadow)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="940" y="280" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sphygmo-mapping" value="ID Mapping Table" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFB74D;strokeColor=#F57C00;strokeWidth=3;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1120" y="280" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sphygmo-abpm-study" value="ABPM Study" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1300" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sphygmo-bp-data" value="BP Measurements" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="940" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sphygmo-report" value="PDF Reports" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1100" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sphygmo-viz" value="Visualization UI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1260" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sphygmo-api" value="Sphygmo API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1100" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sphygmo-auth" value="Auth Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="940" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- External Entities -->
+        <mxCell id="external-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=3;dashed=1" vertex="1" parent="1">
+          <mxGeometry x="900" y="750" width="600" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="external-label" value="EXTERNAL SYSTEMS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#666666" vertex="1" parent="1">
+          <mxGeometry x="910" y="760" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s3-storage" value="S3 Storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="940" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notification" value="Notification Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1100" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="email" value="Email Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#666666;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1260" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships -->
+        <!-- MVCP Internal -->
+        <mxCell id="edge1" value="belongs to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976D2;strokeWidth=2" edge="1" parent="1" source="mvcp-user" target="mvcp-org">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge2" value="manages" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976D2;strokeWidth=2" edge="1" parent="1" source="mvcp-user" target="mvcp-patient">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge3" value="has" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976D2;strokeWidth=2" edge="1" parent="1" source="mvcp-patient" target="mvcp-study">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge4" value="type of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976D2;strokeWidth=2" edge="1" parent="1" source="mvcp-holter-study" target="mvcp-study">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge5" value="type of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#F57C00;strokeWidth=2;dashed=1" edge="1" parent="1" source="mvcp-abpm-study" target="mvcp-study">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge6" value="generates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976D2;strokeWidth=2" edge="1" parent="1" source="mvcp-holter-study" target="mvcp-ecg-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge7" value="authenticates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976D2;strokeWidth=3;fontStyle=1" edge="1" parent="1" source="mvcp-identity" target="mvcp-patient">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Cross-System -->
+        <mxCell id="edge8" value="syncs to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9C27B0;strokeWidth=3;fontStyle=1;dashed=1" edge="1" parent="1" source="mvcp-patient" target="sphygmo-patient">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="240" />
+              <mxPoint x="800" y="240" />
+              <mxPoint x="800" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="edge9" value="maps IDs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#F57C00;strokeWidth=3;fontStyle=1" edge="1" parent="1" source="sphygmo-patient" target="sphygmo-mapping">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge10" value="creates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9C27B0;strokeWidth=3;fontStyle=1;dashed=1" edge="1" parent="1" source="mvcp-abpm-study" target="sphygmo-abpm-study">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="470" />
+              <mxPoint x="800" y="470" />
+              <mxPoint x="800" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="edge11" value="proxies data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976D2;strokeWidth=3;fontStyle=1" edge="1" parent="1" source="mvcp-api-gateway" target="sphygmo-api">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="590" />
+              <mxPoint x="860" y="590" />
+              <mxPoint x="860" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- SCLA to MVCP -->
+        <mxCell id="edge12" value="uploads to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4CAF50;strokeWidth=3;fontStyle=1" edge="1" parent="1" source="scla-sync" target="mvcp-api-gateway">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="730" />
+              <mxPoint x="680" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="edge13" value="authenticates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#388E3C;strokeWidth=2" edge="1" parent="1" source="scla-user" target="mvcp-identity">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="730" />
+              <mxPoint x="80" y="730" />
+              <mxPoint x="80" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Device relationships -->
+        <mxCell id="edge14" value="manages" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#388E3C;strokeWidth=2" edge="1" parent="1" source="scla-device" target="scla-holter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge15" value="manages" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#388E3C;strokeWidth=2" edge="1" parent="1" source="scla-device" target="scla-abpm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="1560" y="100" width="200" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="LEGEND" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1560" y="110" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-mvcp" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1570" y="150" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-mvcp-text" value="MVCP Entity" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1660" y="150" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-scla" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1570" y="190" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-scla-text" value="SCLA Entity" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1660" y="190" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-sphygmo" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#F57C00;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1570" y="230" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-sphygmo-text" value="Sphygmo Entity" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1660" y="230" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-new" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE082;strokeColor=#F57C00;strokeWidth=2;dashed=1" vertex="1" parent="1">
+          <mxGeometry x="1570" y="270" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-new-text" value="New/Modified" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1660" y="270" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-critical" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#90CAF9;strokeColor=#1976D2;strokeWidth=3;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1570" y="310" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-critical-text" value="Critical Entity" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1660" y="310" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-sync" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9C27B0;strokeWidth=3;fontStyle=1;dashed=1" edge="1" parent="1">
+          <mxGeometry x="1570" y="350" width="80" height="20" as="geometry">
+            <mxPoint x="1570" y="360" as="sourcePoint" />
+            <mxPoint x="1650" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-sync-text" value="Cross-System" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1660" y="350" width="90" height="20" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

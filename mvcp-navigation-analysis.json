@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-07-22T09:30:47.811Z",
+  "currentNavigation": {
+    "url": "https://portal.myanthealth.com/patients",
+    "title": "Myant Virtual Clinic Platform",
+    "topNavigation": [],
+    "patientNavigation": [],
+    "allLinks": [],
+    "currentIssues": []
+  },
+  "proposedChanges": {
+    "topLevel": [
+      {
+        "current": "Holter Studies",
+        "proposed": "Studies",
+        "reason": "More inclusive for ABPM and future devices"
+      }
+    ],
+    "patientLevel": [
+      {
+        "action": "remove",
+        "tab": "Virtual Consultation",
+        "reason": "Per requirements"
+      },
+      {
+        "action": "modify",
+        "current": "ECG",
+        "proposed": "ECG (Holter)",
+        "reason": "Make specific to Holter studies"
+      },
+      {
+        "action": "add",
+        "tab": "ABPM",
+        "reason": "New tab for blood pressure studies"
+      },
+      {
+        "action": "modify",
+        "current": "Summary",
+        "proposed": "Summary",
+        "reason": "Show all active studies with links"
+      }
+    ],
+    "navigationOptions": [
+      {
+        "option": "Option A: Unified Studies Tab",
+        "description": "Single \"Studies\" tab with sub-navigation for Holter/ABPM",
+        "pros": [
+          "Cleaner navigation",
+          "Easier to add future devices",
+          "Single entry point"
+        ],
+        "cons": [
+          "Extra click to reach specific study type",
+          "May be less discoverable"
+        ]
+      },
+      {
+        "option": "Option B: Separate Tabs",
+        "description": "Dedicated tabs for \"Holter\" and \"ABPM\"",
+        "pros": [
+          "Direct access to each study type",
+          "Clear separation",
+          "No sub-navigation needed"
+        ],
+        "cons": [
+          "More tabs in navigation",
+          "Need to add new tab for each device type"
+        ]
+      }
+    ]
+  },
+  "screenshots": [
+    "01-login-filled.png",
+    "02-current-page.png",
+    "03-patient-view.png"
+  ],
+  "patientTabs": []
+}
